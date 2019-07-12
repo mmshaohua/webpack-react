@@ -1,0 +1,12 @@
+.swiper-container {
+  height: 210px;
+  img {
+    width: 100%;
+  }
+  p {
+    position: fixed;
+    top: 42px;
+    right: 0;
+    z-index: 1000;
+  }
+}

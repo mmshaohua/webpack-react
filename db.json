@@ -1,0 +1,61 @@
+{
+  "users": [
+    {
+      "userName": "xiaohong",
+      "password": "123",
+      "sex": 0,
+      "city": "444",
+      "id": 4
+    },
+    {
+      "userName": "xiaoqiang",
+      "password": "123",
+      "sex": 1,
+      "city": "333",
+      "id": 5
+    },
+    {
+      "userName": "xiaoli",
+      "password": "123",
+      "sex": 0,
+      "city": "111",
+      "id": 6
+    },
+    {
+      "userName": "xiaoling",
+      "password": "123",
+      "sex": 0,
+      "city": "111",
+      "id": 7
+    },
+    {
+      "userName": "xiaobai",
+      "password": "123",
+      "sex": 1,
+      "city": "333",
+      "id": 8
+    }
+  ],
+  "cityList": [
+    {
+      "id": 1,
+      "cityId": "111",
+      "city": "北京市"
+    },
+    {
+      "id": 2,
+      "cityId": "222",
+      "city": "上海市"
+    },
+    {
+      "id": 3,
+      "cityId": "333",
+      "city": "广州市"
+    },
+    {
+      "id": 4,
+      "cityId": "444",
+      "city": "深圳市"
+    }
+  ]
+}
