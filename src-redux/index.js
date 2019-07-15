@@ -1,7 +1,6 @@
 import React, {Fragment} from 'react'
 import ReactDOM from 'react-dom'
 import TodoList from './components/todoList'
-import Hello from './components/hello'
 import './index.scss'
 
 class App extends React.Component {
@@ -11,8 +10,6 @@ class App extends React.Component {
         <h1>TodoList</h1>
         <hr/>
         <TodoList />
-        <hr />
-        <Hello />
       </Fragment>
     )
   }
