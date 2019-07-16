@@ -54,7 +54,7 @@ export const actionsDelTodo = (id) => {
     }).then(response => response.json())
       .then(res => {
         // console.log(res)
-        console.log(getState())
+        // console.log(getState())
         dispatch({ type: constants.delTodo, value: id })
         dispatch(actionsInitTodoList())
       })

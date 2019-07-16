@@ -1,27 +1,14 @@
-import { createStore, applyMiddleware, compose } from 'redux'
-import logger from 'redux-logger'
-import thunk from 'redux-thunk'
+import { createStore } from 'redux'
 
-// 引入拆分出去的 reducer
-import todoReducer from './todo/reducer'
-import helloReducer from './hello/reducer'
-
-const composeEnxxx = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
-
-const combineRdeducers = obj => {
-  return (state = {}, action) => {
-    let res = {}
-    for (let key in obj) {
-      res[key] = obj[key](state[key], action)
-    }
-    return res
-  }
+const initState = {
+  userInfo: null
 }
 
-export default createStore(
-  combineRdeducers({
-    todo: todoReducer,
-    hello: helloReducer
-  }),
-  composeEnxxx(applyMiddleware(thunk, logger))
-)
+export default createStore((state = initState, action) => {
+  if (action.type === 'login') {
+    return Object.assign({}, state, {
+      userInfo: 'xiaobai'
+    })
+  }
+  return state
+})

@@ -14,16 +14,21 @@ export default (state = initState, action) => {
       })
 
     case constants.addTodo:
-      // state.inputVal = ''
-      return Object.assign({}, state, { todoList: [...state.todoList, action.value] })
+      return Object.assign({}, state, {
+        todoList: [...state.todoList, action.value]
+      })
     
     case constants.changeInput:
-      return Object.assign({}, state, { inputVal: action.value })
+      return Object.assign({}, state, {
+        inputVal: action.value
+      })
     
     case constants.delTodo:
-      let list = state.todoList.slice(0)
-      list.splice(action.value, 1)
-      return Object.assign({}, state, { todoList: [...list] })
+      return Object.assign({}, state, {
+        todoList: state.todoList.filter(item =>
+          item.id !== action.value
+        )
+      })
     
     default:
       return state
